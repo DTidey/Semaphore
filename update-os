@@ -3,6 +3,7 @@
   vars:
     created_username: david
     ansible_username: ansible
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
   tasks:
   - name: Upgrade all packages
     apt:
